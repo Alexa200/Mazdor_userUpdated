@@ -76,6 +76,7 @@ public class ChatMessagesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chat_messages);
 
 
+
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -85,9 +86,10 @@ public class ChatMessagesActivity extends AppCompatActivity {
 //            }
 //        });
 
-
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mStorage = FirebaseStorage.getInstance().getReference();
         mDatabase = FirebaseDatabase.getInstance().getReference(Database_Path);
+        mDatabase.keepSynced(true);
         mUsersRef = FirebaseDatabase.getInstance().getReference().child("PROFILE");
         firebaseAuth = FirebaseAuth.getInstance();
         AcitveUserName = (TextView) findViewById(R.id.userNameAct);

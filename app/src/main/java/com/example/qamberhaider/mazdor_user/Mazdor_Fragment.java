@@ -51,7 +51,10 @@ public class Mazdor_Fragment extends Fragment {
 //        SendTextmsg = (ImageView)v.findViewById(R.id.message_user);
 
 
+
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mDatabase = FirebaseDatabase.getInstance().getReference(Database_Path);
+        mDatabase.keepSynced(true);
         firebaseAuth = FirebaseAuth.getInstance();
 
 
@@ -64,6 +67,7 @@ public class Mazdor_Fragment extends Fragment {
         progressDialog = new ProgressDialog(getContext());
 
         progressDialog.setMessage("Please Wait");
+        progressDialog.setCancelable(false);
         progressDialog.show();
         mDatabase.child("PROFILE").addValueEventListener(new ValueEventListener() {
             @Override
