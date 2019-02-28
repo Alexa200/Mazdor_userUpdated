@@ -1,7 +1,7 @@
 
 
-# Mazdor(Employer)
-![mazdor-psd](https://user-images.githubusercontent.com/31346514/48180905-497e5780-e347-11e8-8558-47621e020c45.png)
+# Mazdor(Emmployee)
+![bg](https://user-images.githubusercontent.com/31346514/53547890-06443080-3b52-11e9-947c-7353730a4baa.png)
 
 
 
