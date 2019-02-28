@@ -1,6 +1,6 @@
 
 
-# Mazdor(Emmployee)
+# Mazdor(Employee)
 ![bg](https://user-images.githubusercontent.com/31346514/53547890-06443080-3b52-11e9-947c-7353730a4baa.png)
 
 
